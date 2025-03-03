@@ -12,7 +12,17 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout RickAndMortyApp
+      uses: actions/checkout@v3
+      with:
+        path: RickAndMortyApp
+
+    - name: Checkout CharacterKit
+      uses: actions/checkout@v3
+      with:
+        # Replace with your actual CharacterKit repository
+        repository: yourusername/CharacterKit
+        path: CharacterKit
 
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode.app
@@ -20,11 +30,11 @@ jobs:
     - name: Xcode version
       run: /usr/bin/xcodebuild -version
 
-    - name: Clean
-      run: xcodebuild clean -scheme RickAndMortyApp -sdk iphonesimulator
-
-    - name: Build
-      run: xcodebuild build -scheme RickAndMortyApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest'
-
-    - name: Run tests
-      run: xcodebuild test -scheme RickAndMortyApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest'
+    - name: Clean Build Test
+      working-directory: RickAndMortyApp
+      run: |
+        xcodebuild clean build test \
+          -scheme RickAndMortyApp \
+          -sdk iphonesimulator \
+          -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+          SWIFT_PACKAGE_PATHS="tesddev/CharacterKitPackage"
