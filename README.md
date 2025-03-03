@@ -1,6 +1,13 @@
 # Rick and Morty App
 
-A SwiftUI application that displays information about Rick and Morty characters using the Rick and Morty API.
+A two-screen iOS application that allows users to browse and view details of characters from the Rick and Morty universe. The app demonstrates SwiftUI, UIKit bridging, modular architecture, and testing.
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/d3018f8a-4b70-47ee-873e-7abf614d542f" width="300" height="600"></td>
+    <td><img src="https://github.com/user-attachments/assets/8629d45c-3bee-43e0-b59a-39b7adb3ac0d" width="300" height="600"></td>
+  </tr>
+</table>
 
 ## Features
 
@@ -8,6 +15,9 @@ A SwiftUI application that displays information about Rick and Morty characters 
 - View detailed information about each character
 - Smooth UIKit integration with SwiftUI
 - Clean architecture with MVVM pattern
+- Swift Package Manager module for networking and data models
+- Comprehensive unit tests with 100% coverage for the logic layer
+- CI integration with GitHub Actions
 
 ## Requirements
 
