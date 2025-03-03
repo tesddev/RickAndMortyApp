@@ -14,15 +14,6 @@ jobs:
     steps:
     - name: Checkout RickAndMortyApp
       uses: actions/checkout@v3
-      with:
-        path: RickAndMortyApp
-
-    - name: Checkout CharacterKit
-      uses: actions/checkout@v3
-      with:
-        # Replace with your actual CharacterKit repository
-        repository: tesddev/CharacterKitPackage
-        path: CharacterKit
 
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode.app
@@ -31,10 +22,8 @@ jobs:
       run: /usr/bin/xcodebuild -version
 
     - name: Clean Build Test
-      working-directory: RickAndMortyApp
       run: |
         xcodebuild clean build test \
           -scheme RickAndMortyApp \
           -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
-          SWIFT_PACKAGE_PATHS="$GITHUB_WORKSPACE/CharacterKit"
+          -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest'
