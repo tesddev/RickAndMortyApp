@@ -21,7 +21,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         # Replace with your actual CharacterKit repository
-        repository: yourusername/CharacterKit
+        repository: tesddev/CharacterKitPackage
         path: CharacterKit
 
     - name: Select Xcode
@@ -37,4 +37,4 @@ jobs:
           -scheme RickAndMortyApp \
           -sdk iphonesimulator \
           -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
-          SWIFT_PACKAGE_PATHS="tesddev/CharacterKitPackage"
+          SWIFT_PACKAGE_PATHS="$GITHUB_WORKSPACE/CharacterKit"
