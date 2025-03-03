@@ -1,0 +1,15 @@
+{
+  "originHash" : "96ff823eb9fddbc03a2dab34609243db53c90ef882c83558849018fa253e1f08",
+  "pins" : [
+    {
+      "identity" : "characterkitpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tesddev/CharacterKitPackage",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3317e61b4a3105fe7021dea709dae7e2d9529645"
+      }
+    }
+  ],
+  "version" : 3
+}

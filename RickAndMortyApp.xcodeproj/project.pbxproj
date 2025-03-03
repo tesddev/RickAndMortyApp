@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		63826D4B2D734B790074CDDE /* CharacterListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63826D4A2D734B790074CDDE /* CharacterListViewModelTests.swift */; };
 		63826D502D734D5B0074CDDE /* CharacterKit in Frameworks */ = {isa = PBXBuildFile; productRef = 63826D4F2D734D5B0074CDDE /* CharacterKit */; };
 		63826D532D734F150074CDDE /* CharacterKit in Frameworks */ = {isa = PBXBuildFile; productRef = 63826D522D734F150074CDDE /* CharacterKit */; };
+		63F8BEE22D75BAEF00163D3C /* CharacterKit in Frameworks */ = {isa = PBXBuildFile; productRef = 63F8BEE12D75BAEF00163D3C /* CharacterKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F8BEE22D75BAEF00163D3C /* CharacterKit in Frameworks */,
 				63826D502D734D5B0074CDDE /* CharacterKit in Frameworks */,
 				63826D532D734F150074CDDE /* CharacterKit in Frameworks */,
 			);
@@ -161,6 +163,7 @@
 			packageProductDependencies = (
 				63826D4F2D734D5B0074CDDE /* CharacterKit */,
 				63826D522D734F150074CDDE /* CharacterKit */,
+				63F8BEE12D75BAEF00163D3C /* CharacterKit */,
 			);
 			productName = RickAndMortyApp;
 			productReference = 63826D1B2D7342550074CDDE /* RickAndMortyApp.app */;
@@ -213,7 +216,7 @@
 			);
 			mainGroup = 63826D122D7342550074CDDE;
 			packageReferences = (
-				63826D512D734F150074CDDE /* XCLocalSwiftPackageReference "../CharacterKit" */,
+				63F8BEE02D75BAEF00163D3C /* XCRemoteSwiftPackageReference "CharacterKitPackage" */,
 			);
 			productRefGroup = 63826D1C2D7342550074CDDE /* Products */;
 			projectDirPath = "";
@@ -541,12 +544,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		63826D512D734F150074CDDE /* XCLocalSwiftPackageReference "../CharacterKit" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../CharacterKit;
+/* Begin XCRemoteSwiftPackageReference section */
+		63F8BEE02D75BAEF00163D3C /* XCRemoteSwiftPackageReference "CharacterKitPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tesddev/CharacterKitPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		63826D4F2D734D5B0074CDDE /* CharacterKit */ = {
@@ -555,6 +562,11 @@
 		};
 		63826D522D734F150074CDDE /* CharacterKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = CharacterKit;
+		};
+		63F8BEE12D75BAEF00163D3C /* CharacterKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63F8BEE02D75BAEF00163D3C /* XCRemoteSwiftPackageReference "CharacterKitPackage" */;
 			productName = CharacterKit;
 		};
 /* End XCSwiftPackageProductDependency section */
