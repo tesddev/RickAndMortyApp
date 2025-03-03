@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		63826D1F2D7342550074CDDE /* RickAndMortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63826D1E2D7342550074CDDE /* RickAndMortyApp.swift */; };
-		63826D212D7342550074CDDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63826D202D7342550074CDDE /* ContentView.swift */; };
 		63826D232D7342560074CDDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63826D222D7342560074CDDE /* Assets.xcassets */; };
 		63826D272D7342560074CDDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63826D262D7342560074CDDE /* Preview Assets.xcassets */; };
 		63826D2F2D73460D0074CDDE /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63826D2E2D73460D0074CDDE /* CharacterListView.swift */; };
@@ -35,7 +34,6 @@
 /* Begin PBXFileReference section */
 		63826D1B2D7342550074CDDE /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63826D1E2D7342550074CDDE /* RickAndMortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyApp.swift; sourceTree = "<group>"; };
-		63826D202D7342550074CDDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63826D222D7342560074CDDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63826D242D7342560074CDDE /* RickAndMortyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RickAndMortyApp.entitlements; sourceTree = "<group>"; };
 		63826D262D7342560074CDDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				63826D302D7346A80074CDDE /* ViewModels */,
 				63826D2D2D7346040074CDDE /* Views */,
 				63826D1E2D7342550074CDDE /* RickAndMortyApp.swift */,
-				63826D202D7342550074CDDE /* ContentView.swift */,
 				63826D222D7342560074CDDE /* Assets.xcassets */,
 				63826D242D7342560074CDDE /* RickAndMortyApp.entitlements */,
 				63826D252D7342560074CDDE /* Preview Content */,
@@ -256,7 +253,6 @@
 				63826D342D7346DC0074CDDE /* CharacterDetailView.swift in Sources */,
 				63826D322D7346B40074CDDE /* CharacterListViewModel.swift in Sources */,
 				63826D2F2D73460D0074CDDE /* CharacterListView.swift in Sources */,
-				63826D212D7342550074CDDE /* ContentView.swift in Sources */,
 				63826D392D73473D0074CDDE /* CharacterCardViewRepresentable.swift in Sources */,
 				63826D1F2D7342550074CDDE /* RickAndMortyApp.swift in Sources */,
 			);
